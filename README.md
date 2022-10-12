@@ -1,14 +1,3 @@
-## Scripting Pages
-
-Scripting Pages is a live online coding environment that can be used to write code and simultaneously visualize its output. This application was built using **React.JS** and helper libraries
-
----
-
-To view the live working version of the project, go to => [Link](https://scriptingpages.netlify.app/)
-
----
-
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
