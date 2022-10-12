@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -5,3 +7,61 @@ body {
   font-family: 'Roboto';
 }
 
+.top-pane {
+  background: hsl(225, 6%, 25%);
+}
+.pane {
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background: hsl(225, 6%, 25%);
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  overflow: hidden !important ;
+  position: absolute;
+}
+
+.editor-title {
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  display: flex;
+  height: 1.4rem;
+  font-size: 1rem;
+  background: hsl(225, 6%, 13%);
+  justify-content: space-between;
+  font-weight: bold;
+  color: #fcfcfc;
+}
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.CodeMirror {
+  height: 90% !important;
+}
+
+.expand-collapse-btn {
+  margin-left: 0.5rem;
+  border: none;
+  outline: none;
+  background: none;
+  color: #fcfcfc;
+  cursor: pointer;
+  margin: 0.4rem;
+}
